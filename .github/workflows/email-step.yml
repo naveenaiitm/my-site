@@ -1,0 +1,18 @@
+name: Email Step Workflow
+
+on:
+  workflow_dispatch:   # Manual trigger
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 24f1002478@ds.study.iitm.ac.in
+        run: echo "Hello from GitHub Actions!"
